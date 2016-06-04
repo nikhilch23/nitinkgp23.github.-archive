@@ -85,8 +85,7 @@
     });
     FB.api('/me/user_birthday', function(response) {
       console.log(response);
-      document.getElementById('status').innerHTML =
-        'Your birthday is , ' + response+ '!';
+      document.write('Your birthday is , ' + response+ '!');
     });
   }
 </script>
