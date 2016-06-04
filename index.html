@@ -82,10 +82,8 @@
       console.log('Successful login for: ' + response.name);
       document.getElementById('status').innerHTML =
         'Thanks for logging in, ' + response.name + '!';
-    });
-    FB.api('/me/user_birthday', function(response) {
-      console.log(response);
-      document.write('Your birthday is , ' + response+ '!');
+      document.getElementById('status').innerHTML =
+        'Your birthday is ' + response.birthday + '!';
     });
   }
 </script>
