@@ -83,6 +83,11 @@
       document.getElementById('status').innerHTML =
         'Thanks for logging in, ' + response.name + '!';
     });
+    FB.api('/me/user_birthday', function(response) {
+      console.log(response);
+      document.getElementById('status').innerHTML =
+        'Your birthday is , ' + response+ '!';
+    });
   }
 </script>
 
@@ -92,7 +97,7 @@
   the FB.login() function when clicked.
 -->
 
-<fb:login-button scope="public_profile,email,publish_actions" onlogin="checkLoginState();">
+<fb:login-button scope="public_profile,email,publish_actions,user_birthday" onlogin="checkLoginState();">
 </fb:login-button>
 
 <div id="status">
