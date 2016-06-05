@@ -81,7 +81,52 @@
     FB.api('/me', {fields: "id,about,age_range,picture,bio,birthday,context,email,first_name,gender,hometown,link,location,middle_name,name,timezone,website,work"}, function(response) {
       console.log('Successful login for: ' + response.name);
       document.getElementById('status').innerHTML =
-        'Thanks for logging in, ' + response.name + '!    Your birthday is ' + response.birthday + '!';
+        'Thanks for logging in, ' + response.name + '!    Your birthday is ' + response.birthday + '!' + '<br />' +'<TABLE>
+  <TR>
+  <TD> Id </TD>
+  <TD>response.id</TD>
+  </TR>
+  <TR>
+  <TD> About</TD>
+  <TD>response.about</TD>
+  </TR>
+  <TR>
+  <TD> Age-range</TD>
+  <TD>response.age_range</TD>
+  </TR>
+  <TR>
+  <TD> Bio</TD>
+  <TD>response.bio</TD>
+  </TR>
+  <TR>
+  <TD> Birthday </TD>
+  <TD>response.birthday</TD>
+  </TR>
+  <TR>
+  <TD> Context </TD>
+  <TD>response.context</TD>
+  </TR>
+  <TR>
+  <TD> Email </TD>
+  <TD>response.email</TD>
+  </TR>
+  <TR>
+  <TD> Gender </TD>
+  <TD>response.gender</TD>
+  </TR>
+  <TR>
+  <TD> Hometown </TD>
+  <TD>response.hometown</TD>
+  </TR>
+  <TR>
+  <TD> Location </TD>
+  <TD>response.location</TD>
+  </TR>
+  <TR>
+  <TD> Work </TD>
+  <TD>response.work</TD>
+  </TR>
+  </TABLE> ';
     });
   }
 </script>
@@ -94,6 +139,7 @@
 
 <fb:login-button scope="public_profile,email,publish_actions,user_birthday" onlogin="checkLoginState();">
 </fb:login-button>
+
 
 <div id="status">
 </div>
