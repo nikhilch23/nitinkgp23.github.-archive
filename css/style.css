@@ -24,6 +24,15 @@ h1,h2,h3,h4,h5,h6{
 p{
 	margin:0;
 }
+
+i {
+    margin-left: 20px;
+    /*text-align: center;*/
+}
+
+.favicons{
+    text-align: center;
+}
 ul,label{
 	margin:0;
 	padding:0;
@@ -498,7 +507,7 @@ h2.resp-accordion {
 /*--//portfolio--*/
 /*--contact--*/
 .contact{
-	background:#000;
+	background:#fff;
 }
 .contact-left iframe {
     width: 100%;
