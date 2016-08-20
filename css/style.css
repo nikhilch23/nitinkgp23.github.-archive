@@ -24,6 +24,12 @@ h1,h2,h3,h4,h5,h6{
 p{
 	margin:0;
 }
+p.stat{
+    font-size: 1em;
+    color: #000;
+    margin-top: 0.8em;
+    letter-spacing: 6px;
+}
 
 i {
     margin-left: 20px;
@@ -528,8 +534,28 @@ h2.resp-accordion {
     width: 46%;
 }
 .contact p {
-    color: #fff;
-    font-weight: 300;
+    /*background: #fe921f;
+    color: #ffffff; 
+    display: inline-block; 
+    font-family: 'Lato', sans-serif; 
+    font-size: 18px; 
+    font-weight: bold; 
+    line-height: 16px; 
+    letter-spacing: 1px; 
+    margin: 0 0 30px; 
+    padding: 10px 15px 8px;
+    font-size: 1.2em;
+    background: darkcyan;
+    display: inline-block;
+    padding: .10em 1.2em;
+    color: #fff;*/
+    font-size: 1.3em;
+    color: #000;
+    margin-bottom: .5em;
+    border: 1px solid #F7E612;
+    display: inline-block;
+    padding: 0 1.2em;
+    font-family: 'Overlock', cursive;
 }
 .contact p a {
     color: #fff;
