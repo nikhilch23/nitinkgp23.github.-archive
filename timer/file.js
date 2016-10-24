@@ -38,5 +38,5 @@ function initializeClock(id, endtime) {
 }
 
 //var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
-var deadline = '10/12/2017';
+var deadline = '11/12/2016';
 initializeClock('clockdiv', deadline);
